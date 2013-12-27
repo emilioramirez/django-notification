@@ -7,9 +7,11 @@ import cPickle as pickle
 
 from django.conf import settings
 from django.core.mail import mail_admins
-from django.contrib.auth.models import User
+
+# For Django +1.5 Custom User
 from django.contrib.auth import get_user_model
 User = get_user_model()
+
 from django.contrib.sites.models import Site
 
 from notification.lockfile import FileLock, AlreadyLocked, LockTimeout

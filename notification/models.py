@@ -7,7 +7,7 @@ from django.core.exceptions import ImproperlyConfigured
 from django.utils.translation import ugettext_lazy as _
 from django.utils.translation import get_language, activate
 
-# from django.contrib.auth.models import User
+# For Django +1.5 Custom User
 from django.contrib.auth import get_user_model
 User = get_user_model()
 
